@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大阪工業大学 茶道部</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+     scroll-behavior: smooth;
+    }
+
+    body{
+      font-family: "Yu Mincho", serif;
+      background-color: #f7f4ed;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ヘッダー */
+
+    header{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: rgba(30,30,30,0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo{
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav ul{
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a{
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #d4b06a;
+    }
+
+    /* メイン画像 */
+
+    .hero{
+      height: 100vh;
+      background-image: url("sado/236190.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero1{
+      height: 100vh;
+      background-image: url("sado/365882.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero2{
+      height: 100vh;
+      background-image: url("sado/365129.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero3{
+      height: 100vh;
+      background-image: url("sado/225232.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.45);
+    }
+        .hero1::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.45);
+    }
+        .hero2::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.45);
+    }
+        .hero3::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.45);
+    }
+
+    .hero-text{
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1{
+      font-size: 64px;
+      margin-bottom: 20px;
+      letter-spacing: 8px;
+    }
+
+    .hero p{
+      font-size: 20px;
+    }
+
+    /* 共通セクション */
+
+  section{
+    padding: 100px 15%;
+    scroll-margin-top: 100px;
+  }
+
+    section h2{
+      font-size: 36px;
+      margin-bottom: 30px;
+      border-left: 6px solid #8b5e3c;
+      padding-left: 15px;
+    }
+
+    /* 活動内容 */
+
+    .activity-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 25px;
+    }
+
+    .card{
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    /* ギャラリー */
+
+    .gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .gallery img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* フッター */
+
+    footer{
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    /* スマホ対応 */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size: 42px;
+      }
+
+      nav{
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      section{
+        padding: 80px 8%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+
+  <header>
+    <nav>
+      <a href="#" class="logo">大阪工業大学　茶道部　発心会</a>
+
+      <ul>
+        <li><a href="#about">紹介</a></li>
+        <li><a href="#activity">活動</a></li>
+        <li><a href="#gallery">写真</a></li>
+        <li><a href="#join">募集</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+
+  <div class="hero1">
+
+    <div class="hero-text">
+      <h1>伝統の継承と</h1>
+      <p>静けさの中で、日本の美を学ぶ</p>
+    </div>
+
+  </div>
+    <div class="hero2">
+
+    <div class="hero-text">
+      <h1>革新を以って</h1>
+      <p>世界に誇る伝統を伝える</p>
+    </div>
+
+  </div>
+    <div class="hero3">
+
+    <div class="hero-text">
+      <h1>OVER THE LIMIT</h1>
+      <p>可能性の限界を超える</p>
+    </div>
+
+  </div>
+
+  <!-- 紹介 -->
+
+  <section id="about">
+
+    <h2>茶道部について</h2>
+
+    <p>
+      私たち茶道部は、お点前だけでなく、
+      礼儀作法や和の心を学びながら活動しています。
+      初心者でも安心して参加できる部活です。
+    </p>
+
+  </section>
+
+  <!-- 活動 -->
+
+  <section id="activity">
+
+    <h2>活動内容</h2>
+
+    <div class="activity-grid">
+
+      <div class="card">
+        <h3>お点前練習</h3>
+        <p>基本的な作法から丁寧に学びます。</p>
+      </div>
+
+      <div class="card">
+        <h3>お茶会</h3>
+        <p>城北祭や新人茶会、初釜などのお茶会を開催しています。</p>
+      </div>
+
+      <div class="card">
+        <h3>行事</h3>
+        <p>部員の親交を深める夏合宿や集中的に練習を行う春練習などがあります。</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ギャラリー -->
+
+  <section id="gallery">
+
+    <h2>活動写真</h2>
+
+    <div class="gallery">
+
+      <img src="sado/225234.jpg">
+      <img src="sado/178143.jpg">
+      <img src="sado/225225_0.jpg">
+      <img src="sado/225222_0.jpg">
+
+    </div>
+
+  </section>
+
+
+  <!-- フッター -->
+
+  <footer>
+    <p>© 2026 茶道部</p>
+  </footer>
+
+</body>
+</html>
