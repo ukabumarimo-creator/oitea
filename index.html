@@ -172,27 +172,53 @@
 
     /* スマホ対応 */
 
-    @media(max-width:768px){
+    @media (max-width:768px){
 
-      .hero h1{
-        font-size: 45px;
-      }
+  /* ヘッダー */
+  nav{
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 10px;
+  }
 
-      nav{
-        flex-direction: column;
-        gap: 10px;
-      }
+  nav ul{
+    gap: 15px;
+  }
 
-      nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+  /* hero */
+  .hero{
+    height: 80vh;
+    background-position: center;
+  }
 
-      section{
-        padding: 80px 8%;
-      }
+  .hero h1{
+    font-size: 20px;
+  }
 
-    }
+  .hero p{
+    font-size: 14px;
+  }
+
+  /* セクション */
+  section{
+    padding: 60px 8%;
+  }
+
+  section h2{
+    font-size: 22px;
+  }
+
+  /* カード */
+  .card{
+    padding: 20px;
+  }
+
+  /* ギャラリー */
+  .gallery img{
+    height: 180px;
+  }
+
+}
 
   </style>
 </head>
