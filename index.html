@@ -68,9 +68,10 @@
 
     .hero{
       height: 100vh;
-      background-image: url("sado/236190.jpg");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
+      background-color: #0f0f0f;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,64 +80,16 @@
       position: relative;
     }
     .hero1{
-      height: 100vh;
       background-image: url("sado/365882.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
     }
     .hero2{
-      height: 100vh;
       background-image: url("sado/365129.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
     }
     .hero3{
-      height: 100vh;
       background-image: url("sado/225232.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
     }
 
     .hero::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.45);
-    }
-        .hero1::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.45);
-    }
-        .hero2::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.45);
-    }
-        .hero3::before{
       content: "";
       position: absolute;
       width: 100%;
@@ -150,13 +103,13 @@
     }
 
     .hero h1{
-      font-size: 64px;
-      margin-bottom: 20px;
+      font-size: 25px;
+      margin-bottom: 10px;
       letter-spacing: 8px;
     }
 
     .hero p{
-      font-size: 20px;
+      font-size: 16px;
     }
 
     /* 共通セクション */
@@ -256,30 +209,29 @@
         <li><a href="#about">紹介</a></li>
         <li><a href="#activity">活動</a></li>
         <li><a href="#gallery">写真</a></li>
-        <li><a href="#join">募集</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- メイン -->
 
-  <div class="hero1">
+  <div class="hero hero1">
 
     <div class="hero-text">
       <h1>伝統の継承と</h1>
       <p>静けさの中で、日本の美を学ぶ</p>
     </div>
-
   </div>
-    <div class="hero2">
+
+    <div class="hero hero2">
 
     <div class="hero-text">
       <h1>革新を以って</h1>
       <p>世界に誇る伝統を伝える</p>
     </div>
-
   </div>
-    <div class="hero3">
+
+    <div class="hero hero3">
 
     <div class="hero-text">
       <h1>OVER THE LIMIT</h1>
