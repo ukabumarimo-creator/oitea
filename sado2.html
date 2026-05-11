@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活動紹介 | 大阪工業大学 茶道部</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      background-color: #f7f4ed;
+      color: #333;
+      line-height: 1.9;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    /* ヘッダー */
+
+    header{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: rgba(30,30,30,0.8);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo{
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    nav ul{
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #d4b06a;
+    }
+
+    /* ページメイン */
+
+    .page-hero{
+      height: 70vh;
+      background-image:
+      linear-gradient(rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)),
+      url("sado/225234.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      color: white;
+    }
+
+    .page-hero h1{
+      font-size: 48px;
+      letter-spacing: 8px;
+      margin-bottom: 15px;
+    }
+
+    .page-hero p{
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* 共通 */
+
+    section{
+      padding: 100px 15%;
+    }
+
+    section h2{
+      font-size: 34px;
+      margin-bottom: 35px;
+      border-left: 5px solid #8b5e3c;
+      padding-left: 15px;
+    }
+
+    /* 概要 */
+
+    .info-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 25px;
+    }
+
+    .info-card{
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .info-card h3{
+      margin-bottom: 15px;
+      color: #8b5e3c;
+    }
+
+    /* 年間行事 */
+
+    .timeline{
+      border-left: 3px solid #8b5e3c;
+      padding-left: 30px;
+    }
+
+    .event{
+      margin-bottom: 40px;
+    }
+
+    .event h3{
+      margin-bottom: 10px;
+      color: #8b5e3c;
+    }
+
+    /* 写真 */
+
+    .activity-photo{
+      width: 100%;
+      border-radius: 16px;
+      margin-top: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* ボタン */
+
+    .back-button{
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 30px;
+
+      background-color: #8b5e3c;
+      color: white;
+
+      text-decoration: none;
+      border-radius: 999px;
+
+      transition: 0.3s;
+    }
+
+    .back-button:hover{
+      background-color: #6d472c;
+    }
+
+    /* フッター */
+
+    footer{
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      margin-top: 80px;
+    }
+
+    /* スマホ */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .page-hero{
+        height: 55vh;
+        padding: 0 10%;
+      }
+
+      .page-hero h1{
+        font-size: 28px;
+        letter-spacing: 4px;
+      }
+
+      section{
+        padding: 70px 8%;
+      }
+
+      section h2{
+        font-size: 24px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+
+  <header>
+
+    <nav>
+
+      <a href="index.html" class="logo">大阪工業大学　茶道部　発心会</a>
+
+      <ul>
+        <li><a href="#about">概要</a></li>
+        <li><a href="#event">年間行事</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- メイン -->
+
+  <div class="page-hero">
+
+    <div>
+
+      <h1>活動紹介</h1>
+
+      <p>
+        茶の湯を通して、礼儀と和の心を学ぶ
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- 概要 -->
+
+  <section id="about">
+
+    <h2>部活動概要</h2>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>活動日</h3>
+        <p>毎週 月曜・水曜</p>
+      </div>
+
+      <div class="info-card">
+        <h3>活動場所</h3>
+        <p>東学舎部室棟4F　部室・和室</p>
+      </div>
+
+      <div class="info-card">
+        <h3>初心者歓迎</h3>
+        <p>未経験から始める部員も多数います。</p>
+      </div>
+
+    </div>
+
+    <img src="sado/178143.jpg" class="activity-photo">
+
+  </section>
+
+  <!-- 行事 -->
+
+  <section id="event">
+
+    <h2>年間行事</h2>
+
+    <div class="timeline">
+
+      <div class="event">
+        <h3>4月上旬 新入生勧誘</h3>
+        <p>
+          部活の勧誘、仮入部等を行っています。<br>(期間を過ぎた後からの途中入部も可能です。)
+        </p>
+      </div>
+
+      <div class="event">
+        <h3>6月下旬～7月上旬 新人茶会</h3>
+        <p>
+          新入生によるお茶会を開催します。
+        </p>
+      </div>
+
+      <div class="event">
+        <h3>9月前半 夏合宿</h3>
+        <p>
+          文化体験を含む部員交流を行います。
+        </p>
+      </div>
+
+      <div class="event">
+        <h3>10月 城北祭茶会</h3>
+        <p>
+          城北祭(学園祭)にて一般向け茶会を開催します。
+        </p>
+      </div>
+
+      <div class="event">
+        <h3>2月前半 初釜</h3>
+        <p>
+          新年最初のお茶会を行います。
+        </p>
+      </div>
+
+      <div class="event">
+        <h3>2月後半 春練習</h3>
+        <p>
+          集中的な練習と部員交流を行います。
+        </p>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-button">
+      TOPへ戻る
+    </a>
+
+  </section>
+
+  <!-- フッター -->
+
+  <footer>
+
+    <p>© 2026 大阪工業大学 茶道部</p>
+
+  </footer>
+
+</body>
+</html>
